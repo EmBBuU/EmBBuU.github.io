@@ -18,19 +18,20 @@ body {
   border-bottom-style: double;
 }
 
-/* Nabar */
+/* Navbar */
 
 /* Style the top navigation bar */
 nav {
   position: absolute;
   display: flex;
-  justify-content: space-between; /* Spread the items equally */
-  align-items: center; /* Center the items vertically */
+  justify-content: space-between;
+  align-items: center;
   overflow: hidden;
   background-color: none;
   margin-top: 1px;
   margin-bottom: 20px;
 }
+
 nav li {
   float: left;
 }
@@ -60,10 +61,29 @@ ul li a.active {
   background-color: #33ff33;
   color: black;
 }
+
 .Navlinks {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    float: none;
+    margin-bottom: 10px;
+  }
+
+  nav a {
+    padding: 5px 20px;
+    font-size: 16px;
+  }
 }
 
 /* Blogi */
@@ -112,7 +132,31 @@ ul li a.active {
   margin-bottom: 20px;
   border-radius: 8px;
 }
+/* Media queries */
+@media only screen and (max-width: 768px) {
+  .blogheader {
+    margin-left: 0;
+    text-align: center;
+    padding-top: 200px;
+  }
 
+  .blogtext {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .img1 {
+    padding-top: 200px;
+    float: none;
+    margin: 10px auto;
+  }
+
+  .btnUp {
+    float: none;
+    display: block;
+    margin: 20px auto;
+  }
+}
 /* Portfolio/CV*/
 .Portfolio {
   text-align: center;
@@ -152,6 +196,34 @@ ul li a.active {
   background-color: #4caf50; /* Green */
   color: white;
 }
+/* Style for mobile screens */
+@media only screen and (max-width: 767px) {
+  .Youtube,
+  .Spotify,
+  .imgCv {
+    float: none;
+    max-width: 100%;
+    margin: 1% 0;
+  }
+  .Youtube,
+  .Spotify {
+    border-style: none;
+    margin: 1% 0;
+  }
+}
+.imgCv {
+  padding-top: 200px;
+}
+.btnLoad {
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.button:hover {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
 
 /* Yhteydenotto*/
 .Contact {
@@ -180,6 +252,27 @@ ul li a.active {
   height: 640px;
   margin-top: 2%;
 }
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .Contact {
+    text-align: center;
+  }
+  .Contactinfo {
+    float: none;
+    background: none;
+    padding: 0;
+  }
+  .Contactlist {
+    padding-top: 0;
+    float: none;
+    text-align: center;
+  }
+  .imgContact {
+    width: 100%;
+    height: auto;
+    padding-top: 200px;
+  }
+}
 
 /* Etusivu */
 
@@ -195,4 +288,21 @@ ul li a.active {
 .imgHome {
   float: right;
   padding: 2%;
+}
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .Home {
+    margin: 0;
+  }
+  .homeheader {
+    padding-top: 200px;
+    margin: 0;
+  }
+  .imgHome {
+    float: none;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-top: 10px;
+  }
 }

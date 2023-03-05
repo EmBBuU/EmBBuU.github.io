@@ -8,3 +8,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <App />
   </BrowserRouter>
 );
+const PORT = process.env.PORT || 3001;
+App.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
