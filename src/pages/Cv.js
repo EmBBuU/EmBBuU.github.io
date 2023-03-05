@@ -18,10 +18,13 @@ const Cv = () => {
             näkökulmasta. Kokemuksena tämä oli todella mahtava ja todellakin
             voisin tehdä tuon uudestaan!
           </p>
-          <ReactPlayer
-            className="player"
-            url="https://www.youtube.com/watch?v=KHwjU_iG3D0&t=1963s"
-          />
+          <div className="player">
+            <ReactPlayer
+              url="https://www.youtube.com/watch?v=KHwjU_iG3D0&t=1963s"
+              width={450}
+              height={350}
+            />
+          </div>
         </div>
         <div className="Spotify">
           <p>

@@ -36,7 +36,7 @@ const Blog = () => {
           <img
             className="img2"
             src={blog2}
-            width={400}
+            width={350}
             height={350}
             alt="Kuva Mimmit koodaa ja Siilin workshopista"
           />

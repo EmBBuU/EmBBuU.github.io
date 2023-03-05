@@ -146,7 +146,6 @@ ul li a.active {
   }
 
   .img1 {
-    padding-top: 200px;
     float: none;
     margin: 10px auto;
   }
@@ -155,6 +154,9 @@ ul li a.active {
     float: none;
     display: block;
     margin: 20px auto;
+  }
+  .img2 {
+    max-width: 90%;
   }
 }
 /* Portfolio/CV*/
@@ -171,7 +173,10 @@ ul li a.active {
   max-width: 40%;
 }
 .player {
-  padding: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
 }
 
 .Spotify {
@@ -210,9 +215,9 @@ ul li a.active {
     border-style: none;
     margin: 1% 0;
   }
-}
-.imgCv {
-  padding-top: 200px;
+  .imgCv {
+    padding-top: 200px;
+  }
 }
 .btnLoad {
   padding: 10px;
